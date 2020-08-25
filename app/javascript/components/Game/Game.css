@@ -1,0 +1,36 @@
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  overflow: hidden;
+}
+
+.column::-webkit-scrollbar {
+  display: none;
+}
+
+.column {
+  /*background: #fff;*/
+  /*height: 100vh;*/
+  overflow: scroll;
+  min-width: 49%;
+  color: #fff;
+}
+
+.column-review {
+  background: #fff;
+  height: 80vh;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 49%;
+}
+
+.column:last-child {
+    background: #000;
+  }
+
+.main {
+  padding-left: 50px;
+}
