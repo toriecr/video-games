@@ -61,4 +61,5 @@ Rails.application.configure do
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
   
   config.hosts << "9b97a61a498e487e892b73bfc14e8039.vfs.cloud9.us-east-2.amazonaws.com"
+  #config.hosts << "https://secure-basin-51362.herokuapp.com/"
 end
