@@ -1,24 +1,36 @@
-# README
+# Steam Games Reviews
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+:exclamation: :exclamation: AS OF 08/26/2020: App is in progress :exclamation::exclamation:
+I created this app as a small project to showcase skills I have been learning (that is, React with Rails). 
 
-Things you may want to cover:
+This project is currently on hold, since I am focusing my time on my freelancing and developing other projects for real clients. Thank you for your understanding.
 
-* Ruby version
+In the meantime, you can view my finished personal projects by visiting my [portfolio](https://toriecr.github.io/).
 
-* System dependencies
+## Short rundown:
 
-* Configuration
+ - Made with Ruby 2.7.0, Rails 6.0.3
+ - Reviews and ratings can be added; average rating is calculated and added to database (PostgreSQL)
 
-* Database creation
+React is installed at the command line:
+ 
+ ```
+    rails new video-games --webpack=react --database=postgresql
+```
 
-* Database initialization
+cd into video-games, then run:
+```
+bundle exec rails db:create
+```
 
-* How to run the test suite
+**Generating models**
+Game model:
+```
+rails g model Game name slug image_url
+```
+Reviews model:
+```
+rails g model Review title description:text score:integer game:belongs_to
+```
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
-
-* ...
